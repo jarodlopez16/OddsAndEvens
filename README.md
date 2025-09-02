@@ -1,1 +1,2 @@
 # OddsAndEvens
+Kotlin app for Android OS - Users can play Odds and Evens game against computer. The player chooses either odd or even, and the computer is assigned the option not chosen. The user can then select a number. The computer will randomly select a number and the sum of both numbers will be either odd or even. If the sum is even, a point is awarded to the player assigned even and vice versa. Points are tallied up over time.
