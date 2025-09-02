@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="#FFBA8E23">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="#FFFFFCD3">
+
+        <!-- Title text -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Odds and Evens"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#FFBA8E23"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Game Instruction -->
+        <TextView
+            android:id="@+id/tvInstruct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose your number and assignment!"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Assignment Choice -->
+        <Spinner
+            android:id="@+id/assignment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:entries="@array/assignments"
+            android:textSize="20sp" />
+
+        <!-- Image buttons for number options -->
+        <GridLayout
+            android:id="@+id/playButtons"
+            android:columnCount="3"
+            android:rowCount="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnZero"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/zero"
+                android:contentDescription="Zero"
+                android:background="@android:color/transparent"
+                android:layout_margin="8dp"/>
+
+            <ImageButton
+                android:id="@+id/btnOne"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/one"
+                android:contentDescription="One"
+                android:background="@android:color/transparent"
+                android:layout_margin="8dp"/>
+
+            <ImageButton
+                android:id="@+id/btnTwo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/two"
+                android:contentDescription="Two"
+                android:background="@android:color/transparent"
+                android:layout_margin="8dp"/>
+
+            <ImageButton
+                android:id="@+id/btnThree"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/three"
+                android:contentDescription="Three"
+                android:background="@android:color/transparent"
+                android:layout_margin="8dp"/>
+
+            <ImageButton
+                android:id="@+id/btnFour"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/four"
+                android:contentDescription="Four"
+                android:background="@android:color/transparent"
+                android:layout_margin="8dp"/>
+
+            <ImageButton
+                android:id="@+id/btnFive"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/five"
+                android:contentDescription="Five"
+                android:background="@android:color/transparent"
+                android:layout_margin="8dp"/>
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#FFFFFCD3">
+
+            <TextView
+                android:id="@+id/cmpText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/cmpImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:contentDescription="Computer Chosen Number"
+                android:layout_marginStart="12dp" />
+
+        </LinearLayout>
+
+        <!-- Game Result -->
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="24dp"
+            />
+
+        <!-- Score Display -->
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player: 0 | Computer: 0"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Reset Button -->
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#FFBA8E23"
+            android:textSize="18sp"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+<!-- Comments: Display the choice of the computer through images, emoji for loss, increase spinner, score, and button size -->

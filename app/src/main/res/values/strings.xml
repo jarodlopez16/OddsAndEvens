@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OddAndEvens</string>
+    <string-array name="assignments">
+        <item>Odds</item>
+        <item>Evens</item>
+    </string-array>
+</resources>
